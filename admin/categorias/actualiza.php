@@ -1,0 +1,26 @@
+<?php
+ob_start();
+//session_start();
+require_once '../../config/conexionBD.php';
+require_once '../config/config.php';
+require_once '../header.php';
+
+if (!isset($_SESSION['user_type'])) {
+    header('Location: ../index.php');
+    exit();
+}
+if ($_SESSION['user_type'] != 'admin') {
+    header('Location: ../../index.php');
+    exit();
+}
+
+$db = new Database();
+$con = $db->conectar();
+
+$id = $_POST['id'];
+$nombre = $_POST['nombre'];
+
+$sql = $con->prepare("UPDATE categorias SET nombre = ? WHERE id = ?");
+$sql->execute([$nombre, $id]);
+
+header('Location: index.php');

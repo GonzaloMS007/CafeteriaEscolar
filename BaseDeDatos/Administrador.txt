@@ -1,0 +1,11 @@
+Desarrollado por:  
+
+Pagina principal
+http://localhost/CafeteriaEscolar/index.php
+"Crear usuario para hacer compras, se utiliza paypal sandbox para pruebas"
+
+
+Pagina de administrador
+http://localhost/cafeteriaEscolar/admin/index.php
+Usuario: Administrador
+Contraseña: admin

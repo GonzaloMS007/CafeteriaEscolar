@@ -1,0 +1,48 @@
+main > .conainer{
+    padding: 30 px 0;
+    
+}
+.image-container {
+    height: 280px; /* ajusta el alto de imagen */
+    overflow: hidden;
+}
+
+.image-content {
+    object-fit: cover; /* Esto asegurará que la imagen cubra todo el contenedor */
+    height: 100%;
+}
+
+
+.button-size {
+    height: 30px; /* Ajusta la altura del botón */
+    min-width: 50px; /* Ancho mínimo del botón */
+    padding: 5px 5px; /* Espaciado interno para texto y bordes */
+    font-size: 12px; /* Tamaño de texto */
+    text-align: center; /* Centra el texto en el botón */
+    border-radius: 5px; /* Redondeo de esquinas */
+}
+
+.button-size-primary {
+    background-color: #007bff; /* Color para botones primarios */
+    color: rgb(255, 255, 255); /* Texto blanco para contraste */
+    border: none; /* Sin borde */
+}
+
+.button-size-green {
+    background-color: green; /* Cambia esto al tono de verde que desees */
+    color: rgb(255, 255, 255); /* El texto del botón debe ser visible, por lo que el blanco es una buena opción */
+    border: none; /* Quita el borde predeterminado para un aspecto más limpio */
+    padding: 5px 5px; /* Ajusta el tamaño del botón agregar el carrito */
+    text-align: center; /* Centra el texto en el botón */
+    border-radius: 5px; /* Agrega bordes redondeados si quieres */
+}
+
+.button-size-green:hover {
+    background-color: rgb(42, 210, 42); /* Para un efecto al pasar el mouse */
+}
+.image-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
